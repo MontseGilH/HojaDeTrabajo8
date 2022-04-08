@@ -13,6 +13,10 @@ public class Paciente implements Comparable<Paciente>{
         return this.codigo.compareTo(otro.getCodigo());
     }
 
+    public String toString(){
+        return this.nombre + ", "+this.sintoma +", "+this.codigo;
+    }
+
     public String getNombre() {
         return nombre;
     }
