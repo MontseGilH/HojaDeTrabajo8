@@ -1,3 +1,6 @@
+/**
+ * Interfaz de los priorityQueue
+ */
 public interface PriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst() throws Exception;

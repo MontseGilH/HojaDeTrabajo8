@@ -1,9 +1,17 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
+/**
+ * Ultima modificacion: 8/04/2022
+ * 
+ * Clase test de los heap 
+ * @file HeapTest.java
+ * @author Montserrat Gil
+ * @author Gabriela Archila
+ */
 public class HeapTest {
+	
 	/**
-	 * Evalua agregar a un arbol
+	 * Evalua agregar y quitar de un vector heap
 	 */
 	@Test
 	void testInsert()  {
