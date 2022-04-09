@@ -20,12 +20,24 @@ public class Main {
 
             //se sacan pacientes hasta que se acaben
             while (!pacientes.isEmpty()){
-                System.out.println("\nIngrese cualquier caracter y enter para sacar un paciente de la cola\n");
+                System.out.println("Ingrese la opcion a realizar:\n1. Sacar paciente de la cola\n2. Ingresar paciente a la cola\n3. Salir\n");
                 String s = scan.nextLine();
                 if (s.equalsIgnoreCase("1")){
-                    System.out.println(pacientes.poll().toString());
+                    //sacar paciente
+                    System.out.println(pacientes.remove().toString()+"\n");
+                } else if (s.equalsIgnoreCase("2")){ 
+                    System.out.println("\nIngrese el nombre del paciente:");
+                    String nom = scan.nextLine();
+                    System.out.println("\nIngrese el sintoma del paciente:");
+                    String sin = scan.nextLine();
+                    System.out.println("\nIngrese el codigo de emergencia del paciente:");
+                    String cod = scan.nextLine();
+                    pacientes.add(new Paciente(nom, sin, cod.toUpperCase()));
+                    System.out.println("\nPaciente agregado\n");
+                } else if (s.equalsIgnoreCase("3")){ 
+                    break;
                 } else {
-                    System.out.println(pacientes.poll().toString());
+                    System.out.println("\nOpcion no valida\n");
                 }
             }
             System.out.println("\nPrograma finalizado\n");
