@@ -19,7 +19,7 @@ public class Archivos {
      * @return pac lista de pacientes
      * @throws Exception
      */
-   public VectorHeap<Paciente> pacientes(String archivo) throws Exception{
+    public VectorHeap<Paciente> pacientes(String archivo) throws Exception{
      VectorHeap<Paciente> pac =  new VectorHeap<Paciente>();
      try{
          File file = new File(archivo);
